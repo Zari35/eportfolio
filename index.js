@@ -32,10 +32,10 @@ function contact(event) {
   loading.classList += " modal__overlay--visible";
   emailjs
     .sendForm(
-      "service_80ih0if",
-      "template_d9refyl",
+      "service_ax10kwb",
+      "template_2q8igkl",
       event.target,
-      "user_K1PoFs8pB2YVWStDxrUls"
+      "9kzlTg7kgFQkgCPrO"
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
@@ -44,7 +44,7 @@ function contact(event) {
     .catch(() => {
       loading.classList.remove("modal__overlay--visible");
       alert(
-        "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+        "The email service is temporarily unavailable. Please contact me directly on sonya.nina.helal@gmail.com"
       );
     });
 }

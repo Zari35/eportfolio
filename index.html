@@ -10,15 +10,25 @@
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-  </head>
+    <script src="lang.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("9kzlTg7kgFQkgCPrO");
+        })();
+    </script>
+
+</head>
 
 <body>
-    <section id="landing-page" onmousemove="moveBackground(event)"> <!-- -->
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
+                <img class="personnal__logo" src="./assets/logo.png" />
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__link"  onclick="toggleModal()"> <!-- -->
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
             nav__link--anchor
             link__hover-effect
@@ -32,14 +42,20 @@
             link__hover-effect--black
           ">Projects</a>
                 </li>
-                <li class="nav__link" onclick="toggleModal()" > <!-- -->
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
           ">Contact</a>
                 </li>
-                <li class="nav__link click" onclick="toggleContrast()"> <!-- -->
+               <!--  <li class="nav__link change-lang">
+                    <select>Language
+                        <option value="en" selected>ENG</option>
+                        <option value="ru" >RU</option>
+                    </select>
+                </li>-->
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class="
             nav__link--anchor
             link__hover-effect
@@ -51,16 +67,15 @@
         <header class="header">
             <div class="header__content">
                 <h1 class="title">Hey</h1>
-                <h1 class="title orange">I'm Sonya.</h1>
+                <h1 class="title palevioletred">I'm Sonya.</h1>
                 <p class="header__para">
-                    I'm a <b class="orange">Frontend Software Engineer</b> with a strong passion for building web
+                    I'm a <b class="palevioletred">Frontend Software Engineer</b> with a strong passion for building web
                     applications.
                     <br>
-                    Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>. <!-- -->
+                    Here's a bit more <b class="palevioletred click" onclick="toggleModal()">about me</b>.
                 </p>
                 <div class="social__list">
-                    <a href="https://www.linkedin.com/in/sonyahelal" target="_blank"
-                        class="social__link click">
+                    <a href="https://www.linkedin.com/in/sonyahelal" target="_blank" class="social__link click">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="https://github.com/Zari35" target="_blank" class="social__link click">
@@ -73,7 +88,7 @@
             </div>
         </header>
         <a href="#">
-            <button class="mail__btn click"  onclick="toggleModal()"> <!-- -->
+            <button class="mail__btn click" onclick="toggleModal()">
                 <i class="fas fa-envelope"></i>
             </button>
         </a>
@@ -85,13 +100,13 @@
                 <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
                 <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
                 <p class="modal__para">
-                    I'm a <b class="orange">frontend software engineer</b> with experience
+                    I'm a <b class="palevioletred">frontend software engineer</b> with experience
                     developing
-                    websites for top-tech companies like <b class="orange">Google</b> and <b class="orange">Canva</b>.
+                    websites for companies like <b class="palevioletred">Canva</b>.
                     <br>
                     I currently solve extremely difficult engineering
-                    problems every day with <b class="orange">React</b>.
-                    
+                    problems every day with <b class="palevioletred">React</b>.
+
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
@@ -184,7 +199,7 @@
         <div class="container">
             <div class="row">
                 <h1 class="section__title">
-                    Here are some of my <span class="orange">projects</span>
+                    Here are some of my <span class="palevioletred">projects</span>
                 </h1>
                 <ul class="project__list">
                     <li class="project">
@@ -193,23 +208,18 @@
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Google In-Store
+                                    Ecommerce library
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    Html, CSS, JavaScript, Vue
+                                    Html, CSS, JavaScript, React
                                 </h4>
                                 <p class="project__description--para">
-                                    Google In-Store is a platform allowing Google retail employees to report any issues
-                                    with their
-                                    store products. Once an issue is reported, it is posted to an API which populates a
-                                    separate
-                                    platform's frontend - which is used by Google's vendors to fix the issue as soon as
-                                    possible. I was
-                                    the sole
-                                    front-end developer of this application.
+                                    Ecommerce library, the users can search 
+                                    and select a book from the library and add it to his cart
+                                    and buy it.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="https://googleinstore.com.au/" class="project__description--link">
+                                    <a href="https://github.com/Zari35/ecommerce-react" class="project__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
                                 </div>
@@ -250,16 +260,13 @@
                                     along with including tips along the way to help them land their first job.
                                 </p>
                                 <div class="project__description--links">
-                                    <a href="#" target="_blank"
-                                        class="project__description--link">
+                                    <a href="#" target="_blank" class="project__description--link">
                                         <i class="fab fa-youtube"></i>
                                     </a>
-                                    <a href="#" target="_blank"
-                                        class="project__description--link">
+                                    <a href="#" target="_blank" class="project__description--link">
                                         <i class="fab fa-github"></i>
                                     </a>
-                                    <a href="#" target="_blank"
-                                        class="project__description--link">
+                                    <a href="#" target="_blank" class="project__description--link">
                                         <i class="fas fa-link"></i>
                                     </a>
                                 </div>
@@ -275,7 +282,7 @@
             <div class="row footer__row">
                 <a href="#" class="footer__anchor">
                     <figure class="footer__logo">
-                        <img src="./assets/logo.svg" class="footer__logo--img" alt="">
+                        <img src="./assets/fleche.png" class="footer__logo--img" alt="">
                     </figure>
                     <span class="footer__logo--popper">
                         Top

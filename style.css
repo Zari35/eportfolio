@@ -62,7 +62,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-  border-color: #f06449;
+  border-color: /*#f06449;*/ palevioletred;
 }
 
 .container {
@@ -97,8 +97,8 @@ input:focus, textarea:focus {
   line-height: 1;
 }
 
-.orange {
-  color: #f06449 !important;
+.palevioletred {
+  color: /*#f06449 */ palevioletred !important;
 }
 
 .link__hover-effect {
@@ -178,6 +178,10 @@ nav,
 #landing-page {
   min-height: 100vh;
 }
+.personnal__logo{
+  width: 100%;
+  max-width: 140px;
+}
 
 .header {
   position: absolute;
@@ -195,13 +199,15 @@ nav,
   max-width: 450px;
 }
 
+
+
 .social__list {
   margin-top: 16px;
   display: flex;
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: /* #f06449; */ palevioletred;
   color: white;
   padding: 6px;
   width: 32px;
@@ -412,8 +418,8 @@ nav {
 }
 
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: /*#f06449; */ palevioletred;
+  border: 2px solid /*#f06449; */ palevioletred;
   color: white;
   font-weight: 700;
   width: 100%;
@@ -429,8 +435,8 @@ nav {
 }
 
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: /*#f06449; */  palevioletred;
+  color: /*#f06449;*/ palevioletred;
 }
 
 .modal__overlay {
@@ -589,7 +595,8 @@ footer {
 }
 
 .footer__logo--img {
-  width: 70px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 .footer__social--list {
